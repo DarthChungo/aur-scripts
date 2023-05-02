@@ -1,6 +1,6 @@
 _pkgname=oggify
 pkgname=${_pkgname}-stlee42-git
-pkgver=0.2.1.r0.gce3e875
+pkgver=0.1.0.r52.0af9905
 pkgrel=1
 pkgdesc="Download spotify media (Premium account required)"
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd "${srcdir}/${_pkgname}"
-  git describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+  echo "$(awk '/^version/ {print substr($3,2,length($3)-3)}' Cargo.toml).r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
 }
 
 build() {
