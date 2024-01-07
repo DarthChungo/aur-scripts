@@ -6,6 +6,7 @@ Some may be published in the AUR.
 ## License
 All scripts are licensed under the MIT license, unless otherwise specified in their respective directory.
 
+```
 Arch linux build scripts
 Copyright © 2023 DarthChungo
 
@@ -26,4 +27,4 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
 DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
 OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+```
